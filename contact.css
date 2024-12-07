@@ -1,0 +1,275 @@
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Cantata+One&family=Delius&display=swap');
+
+*{
+	box-sizing: border-box;
+}
+
+body {
+    font-family: "Delius",cursive;
+    background-color: #F8FFF1; 
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: darkslategrey;
+    color: white;
+}
+.welcome-section h1 {
+    font-family: "Cantata One", serif;
+}
+
+
+.logo img {
+    height: 60px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: darkgreen 
+}
+
+
+
+/*  styling the main container */
+main {
+    display: flex;
+    flex-direction: row;
+    width: 80%; 
+    margin: 50px auto; 
+    padding: 20px; 
+    background-color: #FFFFFF; 
+    border-radius: 15px; 
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.2), -8px -8px 20px rgba(255, 255, 255, 0.3); 
+    transform: perspective(1000px) rotateX(1deg); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+main:hover {
+    transform: perspective(1000px) rotateX(0deg) scale(1.02); 
+    box-shadow: 12px 12px 25px rgba(0, 0, 0, 0.3), -12px -12px 25px rgba(255, 255, 255, 0.3); 
+}
+
+/* Welcome section styles */
+
+.welcome-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.welcome-section h1 {
+    font-size: 2rem;
+    color: #007F00; 
+}
+
+
+
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    gap: 15px;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-weight: bold;
+    color: #333;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #007f00; 
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color:#F8FFF1;
+    color: #007F00; 
+    transform: translateY(-3px); 
+}
+
+/* Message styles */
+.success-message {
+    color: #007f00; 
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.error-message {
+    color: #d9534f; 
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Slogan Section */
+#contact-title {
+    flex: 1 1 30%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+}
+
+#contact-title h3 {
+    font-size: 2rem;
+    color: #007F00;
+    text-align: center;
+    line-height: 1.5;
+    font-weight: bold;
+}
+
+
+
+/* Responsive Design */
+
+/*  (max-width: 768px) */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        justify-content: center;
+    }
+
+    main {
+        width: 95%;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    #contact-title h3 {
+        font-size: 1.5rem;
+    }
+}
+
+/*  (max-width: 480px) */
+@media (max-width: 480px) {
+    .welcome-section h1 {
+        font-size: 1.5rem;
+    }
+
+    #contact-title h3 {
+        font-size: 1.2rem;
+    }
+
+    input, button {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    .footer-section {
+        font-size: 0.7rem;
+        text-align: center;
+    }
+}
+
+/* (min-width: 1600px) */
+@media (min-width: 1600px) {
+    main {
+        max-width: 1500px;
+    }
+
+    .welcome-section h1 {
+        font-size: 3rem;
+    }
+
+    #contact-title h3 {
+        font-size: 2.5rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: darkslategrey;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+
+}
