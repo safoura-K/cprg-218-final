@@ -1,8 +1,8 @@
 // Define the image and text data for each section
 const imagetext = {
     about: {
-        title: "About Voir",
-        text: "Voir is a groundbreaking company dedicated to revolutionizing the world of medical glasses for children. Our mission is to create innovative, stylish, and highly functional eyewear that not only improves vision but also boosts confidence.",
+        title: "About VOIR",
+        text: "VOIR is a groundbreaking company dedicated to revolutionizing the world of medical glasses for children. Our mission is to create innovative, stylish, and highly functional eyewear that not only improves vision but also boosts confidence.",
         image: "images/store.png",
     },
     goals: {
@@ -12,7 +12,7 @@ const imagetext = {
     },
     team: {
         title: "Our Team",
-        text: "The heart of Voir lies in our team of passionate experts, including pediatric optometrists, designers, and child development specialists.",
+        text: "The heart of VOIR lies in our team of passionate experts, including pediatric optometrists, designers, and child development specialists.",
         image: "images/team.png",
     },
 };
